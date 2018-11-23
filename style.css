@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body{
+    margin: 0;
     color: #333;
     background-color: #f0f0f0;
     font-family: 'Times New Roman', Times, serif;
@@ -12,7 +13,7 @@ h3{
     font-family: 'Montserrat', sans-serif;
 }
 
-header, 
+header,
 footer{
     color: #f0f0f0;
     background-color: #333;
@@ -21,4 +22,9 @@ footer{
 
 .crveno{
     color: crimson;
+}
+
+.container{
+  padding-left: 10%;
+  padding-right: 10%;
 }
