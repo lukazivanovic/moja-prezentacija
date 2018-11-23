@@ -27,4 +27,7 @@ nav a:hover{
   nav a:hover{
     background: #000;
   }
+  header{
+    padding-bottom: 8px;
+  }
 }
