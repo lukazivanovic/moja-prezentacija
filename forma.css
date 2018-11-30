@@ -1,0 +1,48 @@
+form {
+  background: #eee;
+  display: block;
+  margin: 40px auto;
+  width: 50%;
+  padding: 60px 60px 20px;
+  border-radius: 4px;
+}
+
+label {
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+input, textarea, select, button {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+input, textarea, select {
+  width: 80%;
+}
+
+textarea {
+  min-height: 200px;
+}
+
+form div {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+p {
+  margin-bottom: 40px;
+}
+
+button {
+  background: #999;
+  color: #fff;
+  font-weight: bold;
+}
+
+.flex-right {
+  justify-content: right;
+}

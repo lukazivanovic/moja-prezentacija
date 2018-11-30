@@ -7,6 +7,7 @@
   <title>Moja prezentacija - Contact</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="navigacija.css">
+  <link rel="stylesheet" href="forma.css">
 </head>
 
 <body>
@@ -24,22 +25,47 @@
   </header>
 
   <main class="container">
-    <h1 id="vrh-strane">Contact Forma</h1>
-
     <form method="post" action="https://formspree.io/sdluka@hotmail.com">
+
+      <p><b>Kontaktirajte nas putem forme</b> popunite polja ispod</p>
+
       <div>
         <label for="ime">Ime i prezime:</label>
-        <input id="ime" name="ime" minlength="1" required>
+        <input id="ime" name="ime" minlength="5" placeholder="Ovde unesite ime" required>
       </div>
+
       <div>
         <label for="telefon">Telefon:</label>
-        <input id="telefon" name="telefon" placeholder="+381" minlength="6" maxlength="20" required>
+        <input id="telefon" minlength="6" maxlength="20" name="telefon" placeholder="+381" required>
       </div>
+
       <div>
         <label for="email">Email:</label>
-        <input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" id="email" name="email" required>
+        <input pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" type="email" id="email" name="email" placeholder="Ovde unesite email" required>
       </div>
-      <button>Posalji</button>
+
+      <div>
+        <label for="jezik">Izaberite jezik</label>
+        <select name="jezik" id="jezik">
+          <option value="1">Javascript</option>
+          <option value="2">PHP</option>
+          <option value="3">C</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="poruka">Ostavite poruku</label>
+        <textarea name="poruka" id="poruka" placeholder="Unesite poruku ovde"></textarea>
+      </div>
+
+      <!-- <div>
+    <label for="uslovi">Uslovi koristenja</label>
+    <input name="uslovi" id="uslovi" type="checkbox">Prihvatam uslove koristenja</textarea>
+  </div> -->
+
+      <div class="flex-right">
+        <button>Posalji</button>
+      </div>
     </form>
   </main>
 
